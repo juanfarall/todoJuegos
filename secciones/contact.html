@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <img class="logo" src="../assets/logo.png" alt="logo">
+        <ul class="sociales">
+            <button><a href="#"><img class="logoSociales" src="../assets/ig.png" alt=""></a></button>
+            <button><a href="#"><img class="logoSociales" src="../assets/fb.png" alt=""></a></button>
+            <br>
+            <button><a href="#"><img class="logoSociales" src="../assets/tw.png" alt=""></a></button>
+            <button><a href="#"><img class="logoSociales" src="../assets/twitch.png" alt=""></a></button>
+        </ul>
+    </header>
+    <nav > 
+    <ul class="nav">
+        <li><a href="../index.html"><h3>Home</h3></a></li>
+        <li><a href="./juegos/juegos.html"><h3>Juegos</h3></a></li>
+        <li><a href="./consolas.html"><h3>Consolas</h3></a></li>
+        <li><a href="./accesorios.html"><h3>Accesorios</h3></a></li>
+        <li><a href="./about.html"><h3>Acerca de</h3></a></li>
+    </ul>
+    </nav>
+    <form class="form" action="" method="get" enctype="text/plain">
+        <fieldset class="fieldset">
+            <legend class="form"><h3>Datos de Contacto</h3></legend>
+            <label for="info-personal">Nombre y Apellido: </label>
+            <input type="text" name="user-info" id="info-personal" placeholder="Ingrese Nombre y Apellido">
+            <br>
+            <br>
+            <label for="info-personal">Email: </label>
+            <input type="text" name="user-info" id="info-personal" placeholder="Ingrese Email">
+            <br>
+            <br>
+            <label for="consola">Consola:</label>
+            <select name="user-size" id="consola">
+                <option value="otro">Elija su consola!</option>
+                <option value="PS5">PlayStation5</option>
+                <option value="XBOX">XboxSeriesX</option>
+                <option value="PC">PC</option>
+            </select>
+            <br><br>
+            <br><br>
+            <legend>Deposite su Consulta:</legend>
+            <textarea name="consulta" id="consulta" cols="50" rows="10"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar Informacion" >
+            <input type="reset" value="Borrar Datos">
+
+        </fieldset>
+    
+    </form>
+
+
+</body>
+<footer class="footer">
+    <h3 class="grs">Informacion de Contacto</h3>
+
+    <ul class="footer__list">
+        <li>Email</li>
+        <li>Whatsapp</li>
+        <li>Direccion</li>
+    </ul>
+</footer>
+</html>
