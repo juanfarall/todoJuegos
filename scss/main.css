@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  height: 100vh;
+  image-resolution: 1080px 1080px 1080px 1080px;
+  background-image: url(./assets/background.jpg);
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header, header, sociales" "nav, nav, nav" "content, content, content" "footer, footer, footer";
+}
+
+header {
+  grid-area: "header";
+}
+
+sociales {
+  grid-area: "sociales";
+}
+
+nav {
+  grid-area: "nav";
+}
+
+footer {
+  grid-area: "footer";
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 15px solid black;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #02007d;
+}
+
+.logo {
+  border: 15px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logoSociales {
+  border: 15px solid black;
+}
+
+.sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 100%;
+  height: 98px;
+}
+
+.nav {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  place-items: center;
+  background-color: orange;
+  padding: 1%;
+  margin: 1cm 1cm 1cm 1cm;
+}
+
+.content {
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 10px solid black;
+  background-color: orange;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.video {
+  margin: 30px;
+  border: solid brown;
+}
+
+.content__desc {
+  width: 700px;
+  padding: 2rem;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.about {
+  background-color: orange;
+  margin: 3rem 3rem 3rem 3rem;
+  width: 1500px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.grs {
+  color: black;
+  font-family: fantasy;
+}
+
+.lista {
+  padding: 3rem 3rem 3rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  background-color: orange;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: orange;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+.footer {
+  margin: 3rem 3rem 3rem 3rem;
+  padding: 3rem 3rem 3rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer__list {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  place-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 15px solid black;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #02007d;
+  }
+  .sociales {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    height: 98px;
+  }
+  .nav {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style: none;
+    background-color: orange;
+    width: auto;
+    padding: 1%;
+    margin: 1cm 1cm 1cm 1cm;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer {
+    margin: 3rem 3rem 3rem 3rem;
+    padding: 3rem 3rem 3rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap;
+    background-color: white;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: 3rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100vh;
+    background-image: url(./assets/background.jpg);
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 15px solid black;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #02007d;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .sociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
+    width: auto;
+    height: auto;
+  }
+  .nav {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    background-color: orange;
+    width: 50%;
+    padding: 1%;
+    margin: 1cm 1cm 1cm 1cm;
+  }
+}
+/*# sourceMappingURL=main.css.map */
