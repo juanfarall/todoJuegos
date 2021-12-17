@@ -63,28 +63,29 @@ footer {
     height: 98px;
 }
 
-
 .nav {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold 700;
     display: flex;
+    background-image: linear-gradient(to right,yellow, red);    
     flex: wrap;
+    color: black;
     align-items: center;
     justify-content:space-evenly;
     list-style: none;
     place-items: center;
-    background-color: orange;
     padding: 1%;
     margin: 1cm 1cm 1cm 1cm;
 }
 
-
+#content{
+    background-image: linear-gradient(to left, orange, red);
+}
 
 .content {
     justify-self: center;
     display: flex;
     border: 10px solid black;
-    background-color: orange;
     justify-content: center;
     width: 100%;
     padding: 1rem 1rem 1rem 1rem;
@@ -141,7 +142,7 @@ footer {
     margin: 3rem 3rem 3rem 3rem;
     padding: 3rem 3rem 3rem 3rem;
     display: flex;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     align-content: center;
     align-self: center;
     height: 3rem;
@@ -227,7 +228,8 @@ footer {
         background-color: rgb(002, 000, 125, 0.5);
         flex-direction: column;
     }
-   
+
+  
 
     .logo{
         align-self:center;
@@ -252,4 +254,9 @@ footer {
         padding: 1%;
         margin: 1cm 1cm 1cm 1cm;
     }
+
+    .content__desc{
+        transform: scale(1.2,1.3);
+    }    
+
 }
