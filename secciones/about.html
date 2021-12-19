@@ -20,25 +20,52 @@
         </ul>
     </header>
 </div>          
-    <nav class="container">
-        <ul class="nav">
-            <li><a href="../index.html">
-                    <h3>Home</h3>
-                </a></li>
-            <li><a href="./juegos/juegos.html">
-                    <h3>Juegos</h3>
-                </a></li>
-            <li><a href="./consolas.html">
-                    <h3>Consolas</h3>
-                </a></li>
-            <li><a href="./accesorios.html">
-                    <h3>Accesorios</h3>
-                </a></li>
-            <li><a href="./contact.html">
-                    <h3>Contacto</h3>
-                </a></li>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Todo Juegos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/consolas.html">Consolas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/accesorios.html">Accesorios</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./secciones/contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./secciones/about.html">Acerca De</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Juegos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">PS5</a></li>
+              <li><a class="dropdown-item" href="#">PS4</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Microsoft</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Servicio 24/7, deja tu consulta en "Contacto"</a>
+          </li>
         </ul>
-    </nav>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
     <main class="content">
     <p class="about">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque sed inventore neque! Cum fuga
@@ -56,6 +83,7 @@
         similique hic, repellendus architecto assumenda? Similique natus fugiat voluptates et, quaerat earum laudantium
         incidunt aperiam labore error qui harum beatae commodi iste quod culpa mollitia fuga consequuntur repudiandae.
     </p>
+</div>
 </main>
 <footer class="footer">
     <h3 class="grs">Informacion de Contacto</h3>
