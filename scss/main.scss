@@ -10,7 +10,7 @@
 .body {
     height: 100vh;
     image-resolution: 1080px 1080px 1080px 1080px;
-    background-image: url(./assets/background.jpg);
+    background-image: url(../assets/background.jpg);
 }
 
 #grid {
@@ -25,6 +25,7 @@
 header {
     grid-area: "header";
 }
+
 sociales{
     grid-area: "sociales";
 }
@@ -44,16 +45,20 @@ footer {
     width: 100%;
     padding: 1rem 1rem 1rem 1rem;
     background-color: rgb(002, 000, 125);
+    &__logo {
+        border: 15px solid black;
+        justify-content: center;
+        &:hover{
+            background-color: red;
+            
+        }
 
 }
-
-.logo {
-    border: 15px solid black;
-    justify-content: center;
 }
 
 .logoSociales {
     border: 15px solid black;
+    
    }
 
 .sociales {
@@ -64,20 +69,27 @@ footer {
 }
 
 
+
 .nav {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold 700;
     display: flex;
-    flex: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
     list-style: none;
-    place-items: center;
     background-color: orange;
-    padding: 1%;
-    margin: 1cm 1cm 1cm 1cm;
+    width: auto;
+    margin: 1cm 2rem 1cm 1cm;
+}
+.navbar{
+    background-image: linear-gradient(to left, yellow, red);
+    
 }
 
+#content{
+    background-image: linear-gradient(to left, orange, red);
+}
 
 
 .content {
@@ -146,18 +158,16 @@ footer {
     align-self: center;
     height: 3rem;
     justify-content: space-evenly;
-
+    &__list {
+        align-self: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        list-style: none;
+        justify-content: space-between;
+        place-items: center;
+    
+    }
 }
 
-
-.footer__list {
-    align-self: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    list-style: none;
-    justify-content: space-between;
-    place-items: center;
-
-}
 
 @media screen and (max-width: 1300px) {
     .header {
@@ -215,7 +225,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         width: 100vh;
-        background-image: url(./assets/background.jpg);
+        background-image: url(../assets/background.jpg);
     
     }
 
@@ -234,7 +244,6 @@ footer {
     }
     .sociales {
         display: flex;
-
         transform: scale(50%);
         width: auto;
         height: auto;

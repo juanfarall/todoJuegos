@@ -10,7 +10,7 @@
 .body {
   height: 100vh;
   image-resolution: 1080px 1080px 1080px 1080px;
-  background-image: url(./assets/background.jpg);
+  background-image: url(../assets/background.jpg);
 }
 
 #grid {
@@ -45,11 +45,15 @@ footer {
   background-color: #02007d;
 }
 
-.logo {
+.header__logo {
   border: 15px solid black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header__logo:hover {
+  background-color: red;
 }
 
 .logoSociales {
@@ -73,9 +77,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,10 +88,19 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   list-style: none;
-  place-items: center;
   background-color: orange;
-  padding: 1%;
-  margin: 1cm 1cm 1cm 1cm;
+  width: auto;
+  margin: 1cm 2rem 1cm 1cm;
+}
+
+.navbar {
+  background-image: -webkit-gradient(linear, right top, left top, from(yellow), to(red));
+  background-image: linear-gradient(to left, yellow, red);
+}
+
+#content {
+  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(red));
+  background-image: linear-gradient(to left, orange, red);
 }
 
 .content {
@@ -264,7 +278,7 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100vh;
-    background-image: url(./assets/background.jpg);
+    background-image: url(../assets/background.jpg);
   }
   .header {
     display: -webkit-box;
