@@ -1,0 +1,37 @@
+#content{
+    background-image: linear-gradient(to left, orange, red);
+}
+
+.content {
+    justify-self: center;
+    display: flex;
+    border: 10px solid black;
+    background-color: orange;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    &__desc {
+        width: 700px;
+        padding: 2rem;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    &__form{
+        background-color: orange;
+    }
+    &__video {
+        margin: 30px;
+        border: solid brown;
+    
+}
+
+}
+
+.about {
+    background-color: orange;
+    margin: 3rem 3rem 3rem 3rem;
+    width: 1500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
